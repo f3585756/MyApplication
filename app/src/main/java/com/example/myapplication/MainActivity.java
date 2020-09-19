@@ -1,31 +1,22 @@
 package com.example.myapplication;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
-import com.example.myapplication.RS;
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.viewpager.widget.ViewPager;
-
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
-import com.androidnetworking.interfaces.JSONArrayRequestListener;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -56,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 HashMap<String, String> body = new HashMap<>();
                 body.put("email", email);
                 body.put("password", password);
-
                     AndroidNetworking.post(Config.BASE_URL + "login")
                             .addBodyParameter(body)
                             .setPriority(Priority.MEDIUM)
@@ -75,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                                         intent.putExtra("userid",userid);
                                         startActivity(intent);
                                         if (role.equalsIgnoreCase("2"))
-                                            intent = new Intent(MainActivity.this, ViewCustomer.class);
+                                            intent = new Intent(MainActivity.this, ViewCustomerAdmin.class);
                                         startActivity(intent);
                                         Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
                                         finish();

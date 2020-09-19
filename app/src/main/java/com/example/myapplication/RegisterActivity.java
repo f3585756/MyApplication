@@ -61,7 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
                 AndroidNetworking.post("http://192.168.6.233:8000/api/register")
                         .addBodyParameter(body)
                         .setPriority(Priority.MEDIUM)
-                        .setOkHttpClient(((RS) getApplication()) .getOkHttpClient())
+                        .setOkHttpClient(((RS) getApplication()).getOkHttpClient())
                         .build()
                         .getAsJSONObject(new JSONObjectRequestListener() {
                             @Override

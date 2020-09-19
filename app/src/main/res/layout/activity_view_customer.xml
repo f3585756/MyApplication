@@ -5,20 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ViewCustomer">
+    tools:context=".ViewCustomerAdmin">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/dataList2"
-        android:layout_gravity="center_horizontal"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_510sdp"/>
-    <Button
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:text="Lanjutkan"
-        android:background="@drawable/btnlanjutkan"
-        android:layout_gravity="center"
-        android:layout_width="@dimen/_280sdp"
-        android:layout_height="@dimen/_35sdp"/>
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_user"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+<!--    <Button-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#fff"-->
+<!--        android:text="Lanjutkan"-->
+<!--        android:background="@drawable/btnlanjutkan"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="@dimen/_280sdp"-->
+<!--        android:layout_height="@dimen/_35sdp"/>-->
 
 </LinearLayout>

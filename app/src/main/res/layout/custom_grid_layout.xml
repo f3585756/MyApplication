@@ -54,8 +54,8 @@
                    android:layout_alignParentRight="true"
                    android:text="Sewa"
                    android:textSize="@dimen/_8sdp"
-                   android:textColor="#fff"
-                   android:background="@drawable/bgregister"
+                   android:textColor="#000"
+                   android:background="#D6D6D6"
                    android:layout_width="@dimen/_50ssp"
                    android:layout_height="@dimen/_25ssp"/>
            </RelativeLayout>

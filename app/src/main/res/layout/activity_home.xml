@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp">
         <ImageView
-                android:src="@drawable/logo"
+                android:src="@drawable/logoi"
                 android:layout_marginLeft="@dimen/_20sdp"
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"/>

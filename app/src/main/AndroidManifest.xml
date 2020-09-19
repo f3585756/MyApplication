@@ -6,13 +6,13 @@
         android:name=".RS"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="CprtBike"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".ViewItem"></activity>
-        <activity android:name=".ViewCustomer">
+        <activity android:name=".ViewCustomerAdmin">
 
         </activity>
         <activity android:name=".DetailActivity" />

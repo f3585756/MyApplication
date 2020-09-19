@@ -2,132 +2,57 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_marginTop="@dimen/_3sdp"
     android:layout_height="@dimen/_120sdp">
 
     <androidx.cardview.widget.CardView
         android:layout_gravity="center_horizontal"
-        android:layout_width="@dimen/_200sdp"
-        android:layout_height="@dimen/_100sdp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_65sdp"
         app:cardCornerRadius="@dimen/_8ssp"
         app:cardElevation="@dimen/_2ssp"
         tools:ignore="MissingConstraints">
 
         <RelativeLayout
+
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-              <RelativeLayout
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/_10sdp">
                 <TextView
-                    android:id="@+id/a1"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv_nama"
                     android:textStyle="bold"
                     android:textColor="@color/basecolor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_30sdp"
                     android:text="Nama"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_15sdp" />
+
                 <TextView
-                    android:layout_below="@id/a1"
-                    android:id="@+id/a2"
-                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_nama"
+                    android:id="@+id/tv_phone"
                     android:textColor="@color/basecolor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_30sdp"
-                    android:text="Email"
-                    android:textSize="@dimen/_10sdp" />
-                <TextView
-                    android:layout_below="@id/a2"
-                    android:id="@+id/a3"
-                    android:textStyle="bold"
-                    android:textColor="@color/basecolor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_30sdp"
                     android:text="No Hp"
-                    android:textSize="@dimen/_10sdp" />
-                <TextView
-                    android:layout_below="@id/a3"
-                    android:id="@+id/a4"
-                    android:textStyle="bold"
-                    android:textColor="@color/basecolor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_30sdp"
-                    android:text="Alamat"
-                    android:textSize="@dimen/_10sdp" />
-                <TextView
-                    android:layout_below="@id/a4"
-                    android:id="@+id/a5"
-                    android:textStyle="bold"
-                    android:textColor="@color/basecolor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_30sdp"
-                    android:text="Ktp"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_15sdp" />
+
+
                   <Button
-                      android:id="@+id/edititem"
+                      android:id="@+id/hapusitem"
                       android:layout_alignParentBottom="true"
                       android:textStyle="bold"
-                      android:textColor="#fff"
-                      android:text="Edit"
-                      android:background="#28a745"
+                      android:textColor="#000"
+                      android:text="Hapus"
+                      android:background="@drawable/btnregister"
                       android:layout_width="match_parent"
                       android:layout_height="@dimen/_20sdp"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_alignParentRight="true"
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/_10sdp">
-                <TextView
-                    android:id="@+id/V_NAMA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="userA"
-                    android:textSize="@dimen/_10sdp" />
-                <TextView
-                    android:layout_below="@id/V_NAMA"
-                    android:id="@+id/V_EMAIL"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/_10sdp" />
-                <TextView
-                    android:layout_below="@id/V_EMAIL"
-                    android:id="@+id/V_NOHP"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/_10sdp" />
-                <TextView
-                    android:layout_below="@id/V_NOHP"
-                    android:id="@+id/V_ALAMAT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/_10sdp" />
-                <TextView
-                    android:layout_below="@id/V_ALAMAT"
-                    android:id="@+id/V_KTP"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/_10sdp" />
-                <Button
-                    android:id="@+id/deleteitem"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentBottom="true"
-                    android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:text="Hapus"
-                    android:background="#dc3545"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_20sdp"/>
-            </RelativeLayout>
+
+
 
         </RelativeLayout>
 
